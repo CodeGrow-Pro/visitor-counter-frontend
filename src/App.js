@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import VisitorCounter from './components/vistorCount';
 
+// App Component
 function App() {
+  // Render the component structure using React Router
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      {/* Define a route for the root path that renders the VisitorCounter component */}
+      <Route path='/' element={<VisitorCounter />} />
+    </Routes>
   );
 }
 
+// Export the App component as the default export
 export default App;
+
