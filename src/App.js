@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import VisitorCounter from './components/vistorCount';
+import VisitorCounter from './components/VisitorCounter';
 
 // App Component
 function App() {
